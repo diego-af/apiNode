@@ -1,0 +1,9 @@
+
+
+
+class GeUsers{
+    async execute(){
+        
+
+    }
+}

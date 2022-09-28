@@ -1,22 +1,21 @@
 
-import {Users}from '../models/Users'
-import sequelize from '../../db'
 
-
+import {Users} from '../models/Users'
 
 export class UserCreate{
 
+        async exeucte({name}){
+           
+
+            const users = await Users.create({
+                name: name
+            })
 
 
-   async execute(req, res){
+            return users;
+        }
 
-       
-        const {name} = req.body
-
-        const user = await Users.create(name)
-
-
-        return user;
-    }
 }
+
+
 

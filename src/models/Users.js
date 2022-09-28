@@ -7,9 +7,8 @@ import db from '../../db'
 const User = db.define('user',{
     id:{
         type:Sequelize.INTEGER,
-        allowNull:true,
-        unique:true,
-        autoInIncrement:true,
+        allowNull:false,
+        autoIncrement:true,
         primaryKey:true,
 
     },
